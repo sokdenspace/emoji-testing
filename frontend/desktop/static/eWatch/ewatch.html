@@ -1,0 +1,36 @@
+{% include "../navbar/navbar.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static "eWatch/ewatch.css" %}">
+<script src="{% static "eWatch/ewatch.js" %}"></script>
+
+<div class="row">
+  <div class="col-6 col-s-9">
+	<video width="400" autoplay controls>
+	    <source src="https://sgp1.digitaloceanspaces.com/test-storage-hosting/EMSV3908.mp4" type="video/mp4">
+    </video>
+	<video width="400" controls>
+		<source src="https://sgp1.digitaloceanspaces.com/test-storage-hosting/SOHH8809.mp4" type="video/mp4">
+    </video>
+	<video width="400" controls>
+		<source src="https://sgp1.digitaloceanspaces.com/test-storage-hosting/MPEB0804.mp4" type="video/mp4">
+    </video>
+	<video width="400" controls>
+		<source src="https://sgp1.digitaloceanspaces.com/test-storage-hosting/EMSV3908.mp4" type="video/mp4">
+    </video>
+	<video width="400" controls>
+		<source src="https://sgp1.digitaloceanspaces.com/test-storage-hosting/SOHH8809.mp4" type="video/mp4">
+    </video>
+	<video width="400" controls>
+		<source src="https://sgp1.digitaloceanspaces.com/test-storage-hosting/MPEB0804.mp4" type="video/mp4">
+    </video>
+		<video width="400" controls>
+		<source src="https://sgp1.digitaloceanspaces.com/test-storage-hosting/EMSV3908.mp4" type="video/mp4">
+    </video>
+	<video width="400" controls>
+		<source src="https://sgp1.digitaloceanspaces.com/test-storage-hosting/SOHH8809.mp4" type="video/mp4">
+    </video>
+</div>
+
+{% endblock %}

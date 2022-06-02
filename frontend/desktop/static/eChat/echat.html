@@ -1,0 +1,31 @@
+{% include "../navbar/navbar.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href={% static "eChat/echat.css" %}>
+<script src={% static "eChat/echat.js" %}></script>
+
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login">
+				<div class="login__field">
+					<img src={% static "assets/images/home.svg" %} alt="email logo" width="auto" height="20px" />
+					<input type="text" class="login__input" placeholder="User name / Email">
+				</div>
+				<div class="login__field">
+					<img src={% static "assets/images/home.svg" %} alt="email logo" width="auto" height="20px" />
+					<input type="password" class="login__input" placeholder="Password">
+				</div>
+				<button class="button login__submit">
+					<span class="button__text">Log In</span>
+				</button>				
+			</form>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+
+{% endblock %}

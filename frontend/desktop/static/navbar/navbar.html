@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% block title %}Emoji{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://www.emoji.biz" />
+	<link rel="alternate" media="only screen and (max-width: 800px)" href="http://m.emoji.biz">
+	<link rel="icon" type="image/x-icon" href={% static "assets/images/logo.png" %}>
+	<link rel="stylesheet" type="text/css" href={% static "navbar/navbar.css" %}>
+	<script src={% static "navbar/navbar.js" %}></script>
+</head>
+<body>
+	
+    {% block content %}
+
+	<!--- Desktop style --->
+	<nav class="navbar">
+	<a href=""><img class="logo" src={% static "assets/images/logo.png" %} style="width: 50px; height: 50px;" alt="logo"></a>
+	<ul id="topnav" class="desktop-list">
+		<li>
+			<a href="">
+				<img src="{% static "assets/images/eFeed.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eFeed</div>
+			</a>
+		</li>
+		<li>
+			<a href="echat">
+				<img src="{% static "assets/images/eChat.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eChat</div>
+			</a>
+		</li>
+		<li>
+		  <a href="eread">
+			  <img src="{% static "assets/images/eRead.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eRead</div>
+			</a>
+		</li>
+		<li>
+			<a href="ewatch">
+				<img src="{% static "assets/images/eWatch.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eWatch</div>
+			</a>
+		</li>
+		<li>
+			<a href="emusic">
+				<img src="{% static "assets/images/eMusic.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eMusic</div>
+			</a>
+		</li>
+
+	</ul>
+
+	<!--- Mobile style --->
+	<ul class="mobile-list">
+		<li>
+			<a href="">
+				<img src="{% static "assets/images/eFeed.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eFeed</div>
+			</a>
+		</li>
+		<li>
+			<a href="echat">
+				<img src="{% static "assets/images/eChat.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eChat</div>
+			</a>
+		</li>
+		<li>
+			<a href="eread">
+				<img src="{% static "assets/images/eRead.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eRead</div>
+			</a>
+		</li>
+		<li>
+			<a href="ewatch">
+				<img src="{% static "assets/images/eWatch.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eWatch</div>
+			</a>
+		</li>
+		<li>
+			<a href="emusic">
+				<img src="{% static "assets/images/eMusic.svg" %}" alt="navbar logo" width="16px" height="16px" />
+				<div class="icon-items">eMusic</div>
+			</a>
+		</li>
+	</ul>
+		<div class="search-container">
+			<form>
+				<input type="text" placeholder="Search" name="search">
+				<button type="submit">$</button>
+			</form>
+		</div>
+	</nav>
+
+
+	{% endblock %}
+
+</body>
+</html>
